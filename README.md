@@ -9,10 +9,10 @@ This repository provides the complete code to reproduce the experiments from the
 The proposed **boundary‑aware distance rescaling** contracts large inter‑cluster gaps while preserving local geometry.  
 For each pair of embedded points we compute the Jaccard distance between their \(k\)-NN neighborhoods and apply an additive‑negative contraction to the original Euclidean distance:
 
-\[
+\begin{equation*}
 d^w(x,y) = d(x,y)\,\bigl(1 - \alpha\,C(x,y)^\beta\bigr),\qquad
 C(x,y)=1-\frac{|\mathcal N_k(x)\cap\mathcal N_k(y)|}{|\mathcal N_k(x)\cup\mathcal N_k(y)|}.
-\]
+\end{equation*}
 
 The rescaled distance matrix is then evaluated by three intrinsic metric families:  
 - **Persistence** (\(H_0\)) – topological summary  
