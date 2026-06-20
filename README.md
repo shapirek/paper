@@ -59,6 +59,7 @@ These scripts:
 - Save results in `ml1m_als_final.csv` and `ml1m_bpr_final.csv`.
 
 ## Repository Structure
+```
 ├── main_age.py
 ├── main_gender.py
 ├── main_als.py
@@ -73,6 +74,7 @@ These scripts:
 ├── common.py # CF utilities (data split, ALS/BPR training, ranking metrics)
 ├── requirements.txt
 └── README.md
+```
 
 Key modules:
 - `run_models_*.py` – model definition, training, and inference for GRU + CoLES framework.
