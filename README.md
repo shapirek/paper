@@ -10,8 +10,8 @@ The proposed **boundary‑aware distance rescaling** contracts large inter‑clu
 For each pair of embedded points we compute the Jaccard distance between their \(k\)-NN neighborhoods and apply an additive‑negative contraction to the original Euclidean distance:
 
 $$
-d^w(x,y) = d(x,y)\,\bigl(1 - \alpha\,C(x,y)^\beta\bigr),\qquad
-C(x,y)=1-\frac{|\mathcal N_k(x)\cap\mathcal N_k(y)|}{|\mathcal N_k(x)\cup\mathcal N_k(y)|}.
+d^w(x,y) = d(x,y)\cdot\bigl(1 - \alpha\,C(x,y)^\beta\bigr),
+~~C(x,y)=1-\frac{|\mathcal N_k(x)\cap\mathcal N_k(y)|}{|\mathcal N_k(x)\cup\mathcal N_k(y)|}.
 $$
 
 The rescaled distance matrix is then evaluated by three intrinsic metric families:  
