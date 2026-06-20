@@ -61,18 +61,31 @@ These scripts:
 ## Repository Structure
 ```
 ├── main_age.py
+
 ├── main_gender.py
+
 ├── main_als.py
+
 ├── main_bpr.py
+
 ├── run_models_age.py # CoLES model, training, inference (Age)
+
 ├── run_exp_age.py # Grid search, caching, orchestration (Age)
+
 ├── run_metrics_age.py # Intrinsic metrics + downstream eval (Age)
+
 ├── run_models_gender.py # CoLES model, training, inference (Gender)
+
 ├── run_exp_gender.py # Grid search, caching, orchestration (Gender)
+
 ├── run_metrics_gender.py # Intrinsic metrics + downstream eval (Gender)
+
 ├── compute_metrics.py # Standalone intrinsic metrics (CF)
+
 ├── common.py # CF utilities (data split, ALS/BPR training, ranking metrics)
+
 ├── requirements.txt
+
 └── README.md
 ```
 
