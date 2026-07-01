@@ -131,12 +131,10 @@ You can obtain it from the [MovieLens website](https://grouplens.org/datasets/mo
 
 Processed experiment outputs are saved in CSV format:
 ```
-| Experiment           | Output File(s)                |
-|----------------------|-------------------------------|
-| Age prediction       | `results_age/out_*.csv`       |
-| Gender prediction    | `results_gender/out_*.csv`    |
-| iALS                 | `ml1m_als_final.csv`          |
-| BPR                  | `ml1m_bpr_final.csv`          |
+| Experiment              | Output File(s)                |
+|-------------------------|-------------------------------|
+| Age & Gender prediction | `results_final.csv`       |
+| iALS & BPR              | `ml1m_final.csv`          |
 ```
 
 Each CSV row corresponds to one trained configuration (or one checkpoint) and includes:
